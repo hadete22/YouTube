@@ -16,7 +16,6 @@ You have two options:
 # Easy way:
 - 👉 Download ready-to-use archive here (includes yt-dlp.exe, ffmpeg.exe, and dependencies)
 
-Place the .exe files in the same directory as the Python script or add them to your system's PATH.
 
 
 
