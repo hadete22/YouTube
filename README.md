@@ -14,14 +14,11 @@ https://www.youtube.com/playlist?list=PLynG1nMmuJTkx5h_mT0qJxT2uO3w_6MjE
 
 📋 2. Manage the Download Queue
 ⬆️ / ⬇️ Reorder videos
-
 ❌ Remove selected items
-
 📜 Show History to view previously downloaded content
 
 🎞️ 3. Select Quality
 Use the dropdown menu to choose a format:
-
 Option	Description
 🎥 Best Quality	Highest available video + audio
 📉 Lowest Quality	Smallest size / lowest quality
@@ -54,21 +51,9 @@ Click Start Download to begin. Progress is shown in a bar with:
 
 🍪 7. Cookie Support
 The app automatically loads YouTube cookies from Firefox.
-
 ✅ You must open YouTube in Firefox at least once
-
 ✅ Cookies are saved and reused – no need to keep Firefox running
 
-This allows downloading:
-
-Private videos (you have access to)
-
-Age-restricted content
-
-"Watch Later" or "Liked" playlists
-
-💡 Tips
-History is stored in a JSON file in your user folder
 
 You can clear it via the 🗑 Clear History button
 
