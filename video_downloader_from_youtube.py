@@ -120,7 +120,7 @@ class YouTubeDownloader:
         self.progress = ttk.Progressbar(root, orient='horizontal', length=500, mode='determinate')
         self.progress.pack(pady=5)
 
-        self.status = ttk.Label(root, text="Don't forget to open YouTube in Firefox", font=("Segoe UI", 8, "italic"))
+        self.status = ttk.Label(root, text="Don't forget to open loginned YouTube in Firefox at least once", font=("Segoe UI", 8, "italic"))
         self.status.pack(pady=5)
 
         self.download_dir = str(Path.home() / "Downloads")
