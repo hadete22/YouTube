@@ -31,22 +31,11 @@ If not selected, downloads will go to your default Downloads directory.
 🗂️ 5. Enable Autosorting (Optional)
 Check 📂 Autosorting to organize videos into folders by channel name.
 
-Example Output:
-
-Copy
-Edit
-Downloads/
-├── Veritasium/
-│   └── The Science of Thinking.mp4
 ⬇️ 6. Start Download
 Click Start Download to begin. Progress is shown in a bar with:
-
 ✅ Filename
-
 ✅ Download size (e.g., 14.3MB / 45.6MB)
-
 ✅ Percentage complete
-
 🔔 A notification sound plays after all downloads are complete.
 
 🍪 7. Cookie Support
