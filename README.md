@@ -7,11 +7,11 @@ To make the downloader work properly, you must have:
 
 You have two options:
 
-#Manual setup:
+# Manual setup:
 
--Download yt-dlp.exe
+- Download yt-dlp.exe
 
--Download ffmpeg.exe and add it to the same folder or to your system PATH
+- Download ffmpeg.exe and add it to the same folder or to your system PATH
 
 #Easy way:
 - 👉 Download ready-to-use archive here (includes yt-dlp.exe, ffmpeg.exe, and dependencies)
