@@ -1,3 +1,25 @@
+⚙️ Before You Start
+To make the downloader work properly, you must have:
+
+✅ yt-dlp.exe – the core video downloading tool
+
+✅ ffmpeg.exe – required for merging video and audio
+
+You have two options:
+
+Manual setup:
+
+Download yt-dlp.exe
+
+Download ffmpeg.exe and add it to the same folder or to your system PATH
+
+Easy way:
+👉 Download ready-to-use archive here (includes yt-dlp.exe, ffmpeg.exe, and dependencies)
+
+Place the .exe files in the same directory as the Python script or add them to your system's PATH.
+
+-
+
 🔗 1. Add a YouTube URL
 Paste a video or playlist URL into the input field and click ➕ Add.
 
