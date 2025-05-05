@@ -1,5 +1,6 @@
 # UserGuide
-🔗 1. Add a YouTube URL\n
+🔗 1. Add a YouTube URL
+
 Paste a video or playlist URL into the input field and click ➕ Add.
 
 Single video:
