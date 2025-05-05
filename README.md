@@ -49,9 +49,9 @@ https://www.youtube.com/playlist?list=PLynG1nMmuJTkx5h_mT0qJxT2uO3w_6MjE
 Use the dropdown menu to choose a format:
 
 Option	Description
--🎥 Best Quality	Highest available video + audio
--📉 Lowest Quality	Smallest size / lowest quality
--🎧 Audio Only	Downloads only the audio track
+- 🎥 Best Quality	Highest available video + audio
+- 📉 Lowest Quality	Smallest size / lowest quality
+- 🎧 Audio Only	Downloads only the audio track
 
 
 📁 4. Choose Output Folder
@@ -66,11 +66,11 @@ Check 📂 Autosorting to organize videos into folders by channel name.
 ⬇️ 6. Start Download
 Click Start Download to begin. Progress is shown in a bar with:
 
--✅ Filename
+- ✅ Filename
 
--✅ Download size (e.g., 14.3MB / 45.6MB)
+- ✅ Download size (e.g., 14.3MB / 45.6MB)
 
--✅ Percentage complete
+- ✅ Percentage complete
 
 🔔 A notification sound plays after all downloads are complete.
 
@@ -78,6 +78,6 @@ Click Start Download to begin. Progress is shown in a bar with:
 🍪 7. Cookie Support
 The app automatically loads YouTube cookies from Firefox.
 
--✅ You must open YouTube in Firefox at least once
+- ✅ You must open YouTube in Firefox at least once
 
--✅ Cookies are saved and reused – no need to keep Firefox running
+- ✅ Cookies are saved and reused – no need to keep Firefox running
