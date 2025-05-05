@@ -16,7 +16,7 @@ You have two options:
 # Easy way:
 - 👉 Download ready-to-use archive here (includes yt-dlp.exe, ffmpeg.exe, and dependencies)
 
-
+https://drive.google.com/file/d/1vu6fDr0EqqzBv14K2KXRqau5Z9_4nWK5/view?usp=sharing
 
 
 
