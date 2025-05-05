@@ -38,11 +38,11 @@ https://www.youtube.com/playlist?list=PLynG1nMmuJTkx5h_mT0qJxT2uO3w_6MjE
 
 
 📋 2. Manage the Download Queue
--⬆️ / ⬇️ Reorder videos
+- ⬆️ / ⬇️ Reorder videos
 
--❌ Remove selected items
+- ❌ Remove selected items
 
--📜 Show History to view previously downloaded content
+- 📜 Show History to view previously downloaded content
 
 
 🎞️ 3. Select Quality
