@@ -79,7 +79,7 @@ class YouTubeDownloader:
         self.queue_listbox.pack(pady=5, padx=10)
 
         self.quality_var = tk.StringVar(value='🎥 Best Quality')
-        self.quality_menu = tk.OptionMenu(root, self.quality_var, '🎥 Best Quality', '📉 Lowest Quality', '🎧 Audio Only')
+        self.quality_menu = tk.OptionMenu(root, self.quality_var, '🎥 Best Quality', '📺 Full HD (1080p)', '📉 Lowest Quality', '🎧 Audio Only')
         self.quality_menu.config(
             font=("Segoe UI", 16),
             width=28,
@@ -194,6 +194,7 @@ class YouTubeDownloader:
         quality_label = self.quality_var.get()
         quality_map = {
             '🎥 Best Quality': 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best',
+            '📺 Full HD (1080p)': 'bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[height<=1080]',
             '📉 Lowest Quality': 'worst',
             '🎧 Audio Only': 'bestaudio',
         }
@@ -296,6 +297,38 @@ class YouTubeDownloader:
             print(f"Failed to save history: {e}")
 
     def show_history(self):
+        def on_item_double_click(event):
+            selection = listbox.curselection()
+            if not selection:
+                return
+            index = selection[0]
+            item = self.history[index]
+            title = item.get('title')
+
+            search_folder = self.download_dir
+            found_file = None
+
+            for root_dir, _, files in os.walk(search_folder):
+                for file in files:
+                    if file.startswith(title): 
+                        found_file = os.path.join(root_dir, file)
+                        break
+                if found_file:
+                    break
+
+            if found_file and os.path.exists(found_file):
+                try:
+                    if platform.system() == "Windows":
+                        os.startfile(found_file)
+                    elif platform.system() == "Darwin":
+                        subprocess.run(["open", found_file])
+                    else:
+                        subprocess.run(["xdg-open", found_file])
+                except Exception as e:
+                    messagebox.showerror("Error", f"Failed to open file:\n{e}")
+            else:
+                messagebox.showerror("File Not Found", f"The file for \"{title}\" could not be located.")
+
         history_win = tk.Toplevel(self.root)
         history_win.title("Download History")
         history_win.geometry("700x550")
@@ -303,12 +336,15 @@ class YouTubeDownloader:
         listbox = tk.Listbox(history_win, font=("Segoe UI", 14), width=100, height=18)
         listbox.pack(padx=10, pady=(10, 0), fill=tk.BOTH, expand=True)
 
+        listbox.bind("<Double-Button-1>", on_item_double_click)
+
         clear_btn = ttk.Button(history_win, text="🗑 Clear History", command=lambda: self.clear_history(listbox))
         clear_btn.pack(pady=(5, 10))
 
         for item in self.history:
             title = item.get('title', 'Unknown Title')
             listbox.insert(tk.END, f"{title}")
+
 
 if __name__ == '__main__':
     if platform.system() == "Windows":
