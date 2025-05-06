@@ -18,7 +18,7 @@ You have two options:
 
 - Download ffmpeg.exe and add it to the same folder or to your system PATH
 
-# Easy way:
+## Easy way:
 - 👉 Download ready-to-use archive here (includes yt-dlp.exe, ffmpeg.exe, and dependencies)
 
 https://github.com/hadete22/YouTube_downloader/releases/tag/YouTube
